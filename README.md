@@ -61,7 +61,21 @@ curl -X GET localhost:3000/cells/B2
 
 #### Deleting Cells
 
+Cells can be deleted using the DELETE method to */cells/id*.
+
+An example of cell deletion (with id "B2") using cURL is specified below
+```
+curl -X DELETE localhost:3000/cells/B2
+```
+
 #### Listing Cells
+
+A list of all cells can be obtained using the GET method to */cells*.
+
+An example of listing all cells using cURL is specified below
+```
+curl -X GET localhost:3000/cells
+```
 
 ### Limitations
 
