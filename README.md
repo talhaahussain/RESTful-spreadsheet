@@ -13,7 +13,7 @@ Python 3.6.8, the libraries *flask* and *requests*, as well as SQLite3.
 
 This submission includes this file and three other Python files. `sc.py` is the main program containing the Flask app.
 
-The following instructions assume that you are trying to run the program on a Linux machine, with Python 3.6.8, flask and requests libraries, as well as standard libraries.
+The following instructions assume that you are trying to run the program on a Linux machine.
 
 To run the program, please use either
 
