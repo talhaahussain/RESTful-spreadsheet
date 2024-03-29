@@ -27,7 +27,7 @@ or
 python3 sc.py -r firebase
 ```
 
-The option selected depends on whether you intend to have data stored in an Sqlite database, or a Firebase Realtime Database. Please note that you must set up your own Firebase Realtime Database and obtain your own unique link to use the latter option. You will also need to ensure that you have a valid database name stored in an environment variable `FBASE`. This can be done using the following
+The option selected depends on whether you intend to have data stored in an SQLite database, or a Firebase Realtime Database. Please note that you must set up your own Firebase Realtime Database and obtain your own unique link to use the latter option. You will also need to ensure that you have a valid database name stored in an environment variable `FBASE`. This can be done using the following
 
 ```
 export FBASE=<your database name here>
@@ -82,3 +82,7 @@ curl -X GET localhost:3000/cells
 ### Limitations
 
 The formula evaluation function does not check for cycles between cells. Division by zero is not supported, neither are imaginary numbers. Only the following operators are accepted: '+', '-', '*', '/' and unary '-'.
+
+### Footnote
+
+The `tests/` contains two bash scripts. `test10.sh` was provided to students to provide a benchmark for program functionality. `test50.sh` was the final script used to assess the project, run with both SQLite and Firebase.
