@@ -4,6 +4,8 @@ Continuous Assessment for ECM3408 - Enterprise Computing, set by Prof. David Wak
 
 This work received a mark of 92/100, although this may be subject to increase in the future.
 
+Please see the specification in `ca.pdf`.
+
 ### Prerequisites
 
 Python 3.6.8, the libraries *flask* and *requests*, as well as SQLite3.
