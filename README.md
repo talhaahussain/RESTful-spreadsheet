@@ -23,9 +23,7 @@ or
 python3 sc.py -r firebase
 ```
 
-The option selected depends on whether you intend to have data stored in an Sqlite database, or a Firebase Realtime Database.
-
-If using the latter option (Firebase), please ensure that you have a valid database name stored in an environment variable `FBASE`. This can be done using the following
+The option selected depends on whether you intend to have data stored in an Sqlite database, or a Firebase Realtime Database. Please note that you must set up your own Firebase Realtime Database and obtain your own unique link to use the latter option. You will also need to ensure that you have a valid database name stored in an environment variable `FBASE`. This can be done using the following
 
 ```
 export FBASE=<your database name here>
