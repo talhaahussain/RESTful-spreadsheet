@@ -1,9 +1,11 @@
 # ECM3408-Assessment
-Continuous Assessment for ECM3408 - Enterprise Computing, set by Prof. David Wakeling. Involves the use of a RESTful interface to implement a spreadsheet MVP as an SC microservice. 
+Continuous Assessment for ECM3408 - Enterprise Computing, set by Prof. David Wakeling. Involves the use of a RESTful interface to implement a spreadsheet MVP as an SC microservice. This microservice was implemented in Flask and uses the repository design pattern, currently supporting 2 data sources, an SQL and a No-SQL database.
 
 This work received a mark of 92/100, although this may be subject to increase in the future.
 
 ### Prerequisites
+
+Python 3.6.8, the libraries *flask* and *requests*, as well as SQLite3.
 
 ### Usage
 
