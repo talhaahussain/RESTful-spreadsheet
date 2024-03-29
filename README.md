@@ -4,7 +4,7 @@ Continuous Assessment for ECM3408 - Enterprise Computing, set by Prof. David Wak
 
 This work received a mark of 92/100, although this may be subject to increase in the future.
 
-Please see the specification in `ca.pdf`.
+Please see `specification.pdf` for specification.
 
 ### Prerequisites
 
