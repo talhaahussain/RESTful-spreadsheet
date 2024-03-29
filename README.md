@@ -7,6 +7,8 @@ This work received a mark of 92/100, although this may be subject to increase in
 
 ### Usage
 
+#### Starting Microservice
+
 This submission includes this file and three other Python files. `sc.py` is the main program containing the Flask app.
 
 The following instructions assume that you are trying to run the program on a Linux machine, with Python 3.6.8, flask and requests libraries, as well as standard libraries.
@@ -32,3 +34,5 @@ export FBASE=<your database name here>
 Please note that `sc.py` will not run unless the `-r` flag has been supplied, followed by one of the two above options provided.
 
 `firebase_backend.py` can be run to clear any current data in a Firebase Realtime Database (assuming you've already exported the database name in this session). `sqlite_backend.py` can be run to test the database functions.
+
+The microservice should listen on port 3000, once running.
