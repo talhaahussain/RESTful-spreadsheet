@@ -36,3 +36,33 @@ Please note that `sc.py` will not run unless the `-r` flag has been supplied, fo
 `firebase_backend.py` can be run to clear any current data in a Firebase Realtime Database (assuming you've already exported the database name in this session). `sqlite_backend.py` can be run to test the database functions.
 
 The microservice should listen on port 3000, once running.
+
+#### Creating/Updating Cells
+
+Cells can be created using the PUT method to */cells/id*, providing a JSON object that has an `id` property whose value is a string representing the cell identifier, and a `formula` property whose value is a string representing its formula. Please note that the `id` property must match the id specified in */cells/id*.
+
+Cells are updated in the exact same manner, where the id in */cells/id* points to an existing cell.
+
+When creating or updating a cell, if a mathematical formula is provided, or other cells are referenced (or both), the values of specified cells will be retrieved from storage and the given formula will be computed prior to storage. When this cell is read (see next section), the value will reflect the evaluated expression.
+
+An example of cell creation (with id "B2" and formula "6") using cURL is specified below
+```
+curl -X PUT -H "Content-Type: application/json" -d "{\"id\":\"B2\",\"formula\":\"6\"}" localhost:3000/cells/B2
+```
+
+#### Reading Cells
+
+Cells can be read from using the GET method to */cells/id*, where id corresponds to the desired cell.
+
+An example of cell reading (with id "B2") using cURL is specified below
+```
+curl -X GET localhost:3000/cells/B2
+```
+
+#### Deleting Cells
+
+#### Listing Cells
+
+### Limitations
+
+The formula evaluation function does not check for cycles between cells. Division by zero is not supported, neither are imaginary numbers. Only the following operators are accepted: '+', '-', '*', '/' and unary '-'.
