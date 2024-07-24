@@ -10,6 +10,18 @@ Please see `specification.pdf` for specification.
 
 Python 3.6.8, the libraries *flask* and *requests*, as well as SQLite3.
 
+Install prerequisites with:
+
+```
+. install.sh
+```
+
+or alteratively, if virtual environment is already available and activated:
+
+```
+pip install -r requirements.txt
+```
+
 ### Usage
 
 #### Starting Microservice
